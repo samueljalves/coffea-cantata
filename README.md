@@ -23,7 +23,9 @@ Animations run automatically and respect reduced-motion preferences (or a visito
 
 The contact section includes an address search link and embedded Google Maps view. No precise coordinates are invented.
 
-The Baba Budan story, support credit and additional promises/relationship copy are intentionally not included, following the latest client feedback.
+The Baba Budan story has been added following the latest request, with links to the Coffee Board of India and Chikkamagaluru district accounts. Dates differ between the accounts, so the site uses the broader seventeenth-century traditional account rather than asserting an exact year. The route drawing is a schematic illustration, not a geographical map.
+
+The page now uses a centred layout defined in `layout.css`. Vivek Ayanna's name appears in the first People card, not as the contact heading. His supplied business email address remains the enquiry destination. The support credit and promises/relationship copy remain omitted.
 
 ## Information still to add
 
