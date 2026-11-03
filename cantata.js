@@ -32,17 +32,31 @@ const prompts = [
 const dialogue = document.querySelector('#coffee-dialogue');
 const question = document.querySelector('#question');
 let currentPrompt = 0;
-setInterval(() => {
-  if (document.hidden || dialogue.matches(':focus-within')) return;
-  currentPrompt = (currentPrompt + 1) % prompts.length;
-  prompt.textContent = prompts[currentPrompt];
-  if (!reducedMotion.matches) {
-    prompt.animate([{ opacity: 0, transform: 'translateY(5px)' }, { opacity: 1, transform: 'none' }], {
-      duration: 450,
-      easing: 'ease-out'
-    });
+let typedLength = prompts[0].length;
+function advancePrompt() {
+  if (document.hidden || dialogue.matches(':focus-within')) {
+    setTimeout(advancePrompt, 500);
+    return;
   }
-}, 6500);
+  if (reducedMotion.matches) {
+    currentPrompt = (currentPrompt + 1) % prompts.length;
+    typedLength = prompts[currentPrompt].length;
+    prompt.textContent = prompts[currentPrompt];
+    setTimeout(advancePrompt, 6500);
+    return;
+  }
+  if (typedLength === prompts[currentPrompt].length) {
+    currentPrompt = (currentPrompt + 1) % prompts.length;
+    typedLength = 0;
+    prompt.textContent = '';
+    setTimeout(advancePrompt, 260);
+    return;
+  }
+  typedLength++;
+  prompt.textContent = prompts[currentPrompt].slice(0, typedLength);
+  setTimeout(advancePrompt, typedLength === prompts[currentPrompt].length ? 4500 : 38);
+}
+setTimeout(advancePrompt, 4500);
 
 dialogue.addEventListener('submit', event => {
   event.preventDefault();

@@ -29,7 +29,6 @@ h3 { font: 500 clamp(24px,2.7vw,35px)/1.12 var(--serif); margin: 0 0 12px; }
 .origin-art svg { width: 100%; height: 100%; }
 .atlas,.coffeehouse { background: #e7d9ae; border: 1px solid #73664355; overflow: hidden; }
 .coffeehouse img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
-.origin-grid .art-credit { margin: -12px 0 12px; font-size: 11px; }
 .land { fill: #b1b483; stroke: #7c7855; stroke-width: 1; }
 .route { fill: none; stroke: #823e2e; stroke-width: 2.5; stroke-dasharray: 5 5; animation: coffee-route 12s linear infinite; }
 .atlas-labels { fill: #452e22; font: bold 13px Georgia,serif; }
@@ -40,9 +39,18 @@ h3 { font: 500 clamp(24px,2.7vw,35px)/1.12 var(--serif); margin: 0 0 12px; }
 .portrait img { display: block; width: 100%; height: auto; }
 .lead { font-size: 21px; }
 .enquiry-panel { position: relative; isolation: isolate; overflow: hidden; background: #203d2b; color: #f4efdb; text-align: center; }
-.coffee-words { position: absolute; inset: 0; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 2vw; opacity: .15; z-index: -1; transform: rotate(-10deg) scale(1.13); font: 500 clamp(32px,8vw,110px) var(--serif); }
+.coffee-words {
+  position: absolute; inset: -12% -15%; z-index: -1; opacity: .24;
+  display: grid; align-content: space-evenly; transform: rotate(-10deg);
+  font: 500 clamp(20px,4vw,66px)/1 var(--serif); pointer-events: none;
+}
+.coffee-words > div { display: flex; justify-content: center; align-items: center; gap: clamp(14px,3vw,44px); white-space: nowrap; }
+.coffee-words > div:nth-child(even) { transform: translateX(-7%) rotate(4deg); }
+.coffee-words span:nth-child(3n + 1) { font-size: 1.5em; transform: rotate(-7deg); }
+.coffee-words span:nth-child(3n + 2) { font-size: .66em; letter-spacing: .08em; text-transform: uppercase; }
+.coffee-words span:nth-child(5n) { transform: rotate(12deg); }
 .dialogue { max-width: 670px; padding: clamp(22px,5vw,58px); background: #203d2bf2; border: 1px solid #e4dcc275; }
-#coffee-prompt { min-height: 3.6em; }
+#coffee-prompt { min-height: 3lh; }
 textarea { display: block; width: 100%; padding: 14px; background: #f4efdb; color: #203d2b; border: 1px solid #e4dcc2; font: inherit; resize: vertical; }
 button { margin-top: 15px; padding: 11px 18px; background: #c6d197; color: #203d2b; border: 0; min-height: 44px; font: inherit; cursor: pointer; }
 button:disabled { opacity: .5; cursor: default; }
