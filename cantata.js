@@ -23,10 +23,11 @@ if ('IntersectionObserver' in window) {
 
 const prompt = document.querySelector('#coffee-prompt');
 const prompts = [
-  'What kind of coffee do your guests enjoy?',
-  'Which roast profile fits your menu?',
-  'What flavours would you like in the cup?',
-  'How do your customers take their coffee?'
+  'What kind of coffee experience do you want to offer?',
+  'Do your customers prefer black or milk-based coffee?',
+  'Which flavours suit your menu: chocolatey, nutty, sweet, fruity or bold?',
+  'Are you looking for affordable, premium or specialty coffee?',
+  'Would you prefer a consistent house blend or a rotating selection?'
 ];
 const dialogue = document.querySelector('#coffee-dialogue');
 const question = document.querySelector('#question');
