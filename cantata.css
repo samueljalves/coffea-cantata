@@ -64,7 +64,7 @@ button:disabled { opacity: .5; cursor: default; }
 :focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .contact-map { position: relative; min-height: 370px; overflow: hidden; border: 1px solid var(--line); background: #dfe4bc; }
 .contact-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-#contact h2 { margin-bottom: 2px; margin-inline-start: -3px; }
+#contact h2 { font-size: clamp(26.6px, 3.85vw, 50.4px); margin-bottom: 2px; margin-inline-start: -3px; }
 #contact .works > div:last-child { text-align: left; }
 .division { margin-bottom: 14px; }
 .contact-links { display: grid; justify-items: start; gap: 8px; margin-top: 20px; overflow-wrap: anywhere; }
