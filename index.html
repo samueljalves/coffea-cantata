@@ -1,91 +1,35 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#c6d197">
-  <meta name="description" content="Coffea Cantata supplies coffee in 250 g, 500 g and 1 kg packets to cafés, hotels and hospitality businesses. Contact Coffea Cantata in Goa.">
-  <title>Coffea Cantata — From Origin To Your Cup</title>
-  <link rel="canonical" href="https://samueljalves.github.io/coffea-cantata/">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" as="image" href="brand-reference.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
-  <link rel="stylesheet" href="motion.css?v=6">
-  <link rel="stylesheet" href="layout.css?v=6">
-  <script src="script.js?v=6" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#c6d197">
+<meta name="description" content="Coffea Cantata in Goa. Coffee, its origins and a conversation about what belongs in your cup.">
+<title>Coffea Cantata — From Origin To Your Cup</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="motion.css?v=7">
+<link rel="stylesheet" href="cantata.css?v=7">
+<script src="cantata.js?v=7" defer></script>
 </head>
 <body>
-  <div class="reading-progress" aria-hidden="true"></div>
-  <a class="skip-link" href="#information">Skip to information</a>
-  <header class="header">
-    <a class="header-name" href="#home" aria-label="Coffea Cantata home">
-      <svg viewBox="180 245 920 540" aria-hidden="true"><image href="brand-reference.jpg" width="1280" height="1024"/></svg>
-    </a>
-    <nav aria-label="Main navigation"><a href="#information">Information</a><a href="#contact">Contact</a></nav>
-  </header>
-  <main>
-    <section class="opening" id="home" aria-label="Coffea Cantata">
-      <a class="wordmark" href="#information" aria-label="Coffea Cantata. View business information">
-        <h1 class="sr-only">Coffea Cantata</h1>
-        <svg class="brand-art" viewBox="180 245 920 540" role="img" aria-label="Coffea Cantata original wordmark"><image href="brand-reference.jpg" width="1280" height="1024"/></svg>
-        <p>From Origin To Your Cup</p>
-      </a>
-      <div class="opening-base"><span>Goa, India</span></div>
-    </section>
-    <div class="content">
-      <section class="information section" id="information" aria-labelledby="information-title">
-        <div class="section-label reveal">Information</div>
-        <div class="section-body reveal">
-          <h2 id="information-title">Coffee for businesses.</h2>
-          <p class="description">Coffea Cantata is a coffee business based in Goa, supplying cafés, coffee shops, hotels and other hospitality businesses.</p>
-          <h3 class="field-label">SKUs offered</h3>
-          <div class="sizes" aria-label="Coffee packet sizes">
-            <a href="#contact" data-pack="250 g" aria-label="Contact us about 250 gram coffee packets"><span>250 <small>g</small></span><span class="size-arrow" aria-hidden="true">↗</span></a>
-            <a href="#contact" data-pack="500 g" aria-label="Contact us about 500 gram coffee packets"><span>500 <small>g</small></span><span class="size-arrow" aria-hidden="true">↗</span></a>
-            <a href="#contact" data-pack="1 kg" aria-label="Contact us about 1 kilogram coffee packets"><span>1 <small>kg</small></span><span class="size-arrow" aria-hidden="true">↗</span></a>
-          </div>
-          <p class="small-note">For product information, pricing and business enquiries, please contact us.</p>
-        </div>
-      </section>
-      <section class="contact section" id="contact" aria-labelledby="contact-title">
-        <div class="section-label reveal">Contact</div>
-        <div class="section-body reveal">
-          <h2 id="contact-title">Business enquiries.</h2>
-          <dl class="contact-list">
-            <div><dt>Email</dt><dd><a id="contact-email" href="mailto:vivek@originfoodventures.com">vivek@originfoodventures.com</a></dd></div>
-            <div><dt>Telephone</dt><dd><a href="tel:+919442723004">+91 94427 23004</a></dd></div>
-            <div><dt>Address</dt><dd><address>Plot L89, Phase 2 E<br>Verna Industrial Estate<br>Verna, Goa 403722</address><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Plot%20L89%2C%20Phase%202%20E%2C%20Verna%20Industrial%20Estate%2C%20Goa%20403722" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Open in Google Maps <span aria-hidden="true">↗</span></a></dd></div>
-          </dl>
-          <a id="email-button" class="email-button" href="mailto:vivek@originfoodventures.com?subject=Business%20enquiry">Email us <span aria-hidden="true">↗</span></a>
-          <form id="enquiry-form" class="enquiry-form" aria-labelledby="enquiry-form-title" aria-describedby="enquiry-help">
-            <h3 id="enquiry-form-title">Tell us what you need.</h3>
-            <p id="enquiry-help">Fill in your enquiry, then send it through your email app.</p>
-            <div class="enquiry-fields">
-              <label>Your name<input name="name" autocomplete="name" maxlength="120" required></label>
-              <label>Email address<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
-              <label>Business name <span>(optional)</span><input name="business" autocomplete="organization" maxlength="160"></label>
-              <label>Packet size <span>(optional)</span><select name="packet"><option value="">Please select</option><option>250 g</option><option>500 g</option><option>1 kg</option></select></label>
-              <label class="enquiry-message">Your message<textarea name="message" rows="4" maxlength="4000" required></textarea></label>
-            </div>
-            <button id="enquiry-submit" class="email-button enquiry-submit" type="submit" disabled>Prepare email <span aria-hidden="true">↗</span></button>
-            <p id="enquiry-status" class="enquiry-status" role="status" aria-live="polite"></p>
-            <noscript><p class="small-note">Please use the email address or telephone number above to contact us.</p></noscript>
-          </form>
-          <div class="location-map"><iframe title="Google Maps: Plot L89, Verna Industrial Estate, Goa" src="https://maps.google.com/maps?q=Plot%20L89%2C%20Phase%202%20E%2C%20Verna%20Industrial%20Estate%2C%20Goa%20403722&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
-        </div>
-      </section>
-      <section class="story section" id="story" aria-labelledby="story-title">
-        <div class="section-label reveal">Coffee origins</div>
-        <div class="section-body reveal">
-          <div class="story-copy"><h2 id="story-title">The Legend of Kaldi<br>and the Dancing Goats.</h2>
-            <p>According to an Ethiopian legend, a goat herder named Kaldi noticed his goats becoming unusually energetic after eating red coffee cherries. In a popular telling, he tried the cherries himself and experienced the same effect.</p>
-            <p>The story continues at a monastery, where a drink made from the cherries helped the monks stay awake. It remains one of coffee’s best-known origin legends.</p>
-          </div>
-          <div class="goat-scene">
-            <svg class="dancing-goats" viewBox="0 0 560 390" role="img" aria-label="Two playful dancing goats with backward-curving horns, long ears and animated spiral eyes">
+<a class="skip-link" href="#origins">Skip to Origins</a>
+<header class="site-nav">
+  <a class="nav-brand" href="#home" aria-label="Coffea Cantata home"><svg viewBox="180 245 920 540" aria-hidden="true"><image href="brand-reference.jpg" width="1280" height="1024"/></svg></a>
+  <nav aria-label="Main navigation"><a href="#origins">Origins</a><a href="#people">People</a><a href="#enquiries">Enquiries</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+  <section id="home" class="panel opening-panel" aria-label="Coffea Cantata">
+    <a class="opening-brand" href="#origins" aria-label="Coffea Cantata. Explore Origins"><svg viewBox="180 245 920 540" aria-hidden="true"><image href="brand-reference.jpg" width="1280" height="1024"/></svg></a>
+    <h1 class="sr-only">Coffea Cantata</h1>
+  </section>
+  <section id="origins" class="panel">
+    <div class="panel-inner">
+      <p class="eyebrow">01 · Origins</p>
+      <h2>From a cherry to a cantata.</h2>
+      <div class="origin-grid">
+        <article>
+          <div class="origin-art"><svg class="dancing-goats" viewBox="0 0 560 390" role="img" aria-label="Two playful dancing goats with backward-curving horns, long ears and animated spiral eyes">
               <defs>
                 <g id="goat-figure">
                   <g class="goat-body">
@@ -113,40 +57,69 @@
               <g transform="translate(0 10)"><g class="goat-dancer"><use href="#goat-figure"/></g></g>
               <g transform="translate(560 15) scale(-1 1)"><g class="goat-dancer dancer-two"><use href="#goat-figure"/></g></g>
               <g class="dance-notes" aria-hidden="true"><path d="M71 164L60 157M78 149L72 137M489 161L500 151M484 145L488 132"/></g>
+            </svg></div>
+          <h3>Kaldi’s dancing goats</h3>
+          <p>In an Ethiopian legend, a herder named Kaldi noticed his goats leaping with unusual energy after eating red coffee cherries. Curiosity got the better of him, and he tried the fruit himself.</p>
+        </article>
+        <article>
+          <div class="origin-art atlas">
+            <svg viewBox="0 0 400 230" role="img" aria-label="Illustrated routes from Ethiopia through Yemen and the Ottoman world to Europe, and from Yemen to India">
+              <defs><pattern id="atlas-grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#7c7855" stroke-opacity=".27"/></pattern></defs>
+              <rect width="400" height="230" fill="url(#atlas-grid)"/>
+              <path class="land" d="M0 19 59 18 91 39 116 38 139 27 146 3 162 1 159 28 147 55 165 65 190 53 222 55 240 38 289 22 338 31 400 15V116L363 107 341 116 325 140 305 150 284 191 261 165 240 130 216 126 202 100 173 97 149 79 128 89 91 86 65 75 37 65 0 69Z M0 91 41 82 75 93 102 95 133 114 149 127 157 149 185 158 159 179 140 218 117 230 94 210 80 176 54 159 31 136 0 137Z M153 108 179 109 216 132 211 151 191 161 171 145Z"/>
+              <path class="route" d="M151 171Q160 143 184 146Q189 112 163 87Q132 46 109 61M184 146Q236 102 280 162"/>
+              <g class="atlas-labels"><circle cx="151" cy="171" r="3"/><text x="110" y="191">Ethiopia</text><circle cx="184" cy="146" r="3"/><text x="188" y="139">Yemen</text><circle cx="163" cy="87" r="3"/><text x="173" y="81">Turkey</text><circle cx="109" cy="61" r="3"/><text x="61" y="55">Europe</text><circle cx="280" cy="162" r="3"/><text x="289" y="176">India</text></g>
             </svg>
           </div>
-        </div>
-      </section>
-      <section class="section india-story" id="coffee-in-india" aria-labelledby="india-title">
-        <div class="section-label reveal">Coffee in India</div>
-        <div class="section-body reveal">
-          <div class="story-copy"><h2 id="india-title">How coffee came to India.</h2>
-            <p>Indian coffee tradition tells of Baba Budan, a Sufi pilgrim who is said to have brought seven unroasted coffee seeds from Mocha in Yemen to the hills near Chikkamagaluru, Karnataka, after a pilgrimage to Mecca in the seventeenth century.</p>
-            <p>According to the story, he planted the seeds in the hills now known as Baba Budangiri. Those seven seeds are remembered as an important beginning in India’s coffee-growing history.</p>
-          </div>
-          <figure class="coffee-journey">
-            <svg viewBox="0 0 680 260" role="img" aria-label="An illustrated journey of seven coffee seeds from Mocha in Yemen across the sea to the hills of Baba Budangiri in Karnataka">
-              <g class="journey-landmarks"><path d="M37 201H177M48 198V135H108V198M47 135L78 114L109 135M64 198V172Q77 155 90 172V198M111 198V150H151V198M128 150V103H142V150M126 103L135 91L144 103M57 150H65M88 150H96M121 165H129M139 165H147"/><path d="M478 196L524 125L566 180L605 110L648 196ZM478 196H648M509 149L523 158L537 145M589 137L606 144L619 135"/><path d="M543 202V181M543 190Q527 175 525 187Q530 198 543 190M543 186Q555 172 559 183Q555 194 543 186M605 204V177M605 192Q589 177 587 189Q592 200 605 192M605 187Q617 173 621 184Q617 195 605 187"/></g>
-              <g class="sea-lines"><path d="M191 205Q209 195 227 205T263 205T299 205T335 205T371 205T407 205T443 205M208 220Q226 210 244 220T280 220T316 220T352 220T388 220T424 220"/></g>
-              <path class="journey-route" d="M153 112C219 36 426 35 508 108"/><path class="route-arrow" d="M497 91L509 109L487 106"/>
-              <g class="seven-seeds"><g transform="translate(263 115) rotate(-20)"><ellipse rx="10" ry="15"/><path d="M2-12Q-6-3 2 5T-2 12"/></g><g transform="translate(296 106) rotate(15)"><ellipse rx="10" ry="15"/><path d="M2-12Q-6-3 2 5T-2 12"/></g><g transform="translate(330 102) rotate(-10)"><ellipse rx="10" ry="15"/><path d="M2-12Q-6-3 2 5T-2 12"/></g><g transform="translate(364 108) rotate(25)"><ellipse rx="10" ry="15"/><path d="M2-12Q-6-3 2 5T-2 12"/></g><g transform="translate(280 153) rotate(20)"><ellipse rx="10" ry="15"/><path d="M2-12Q-6-3 2 5T-2 12"/></g><g transform="translate(316 145) rotate(-15)"><ellipse rx="10" ry="15"/><path d="M2-12Q-6-3 2 5T-2 12"/></g><g transform="translate(352 150) rotate(10)"><ellipse rx="10" ry="15"/><path d="M2-12Q-6-3 2 5T-2 12"/></g></g>
+          <h3>Across ports and hills</h3>
+          <p>From Ethiopia, coffee travelled through Yemen and the Ottoman world into Europe. Indian tradition tells of Baba Budan carrying seven seeds from Yemen to the hills of Karnataka.</p>
+        </article>
+        <article>
+          <div class="origin-art coffeehouse">
+            <svg viewBox="0 0 320 200" role="img" aria-label="Illustration of two women sharing coffee in a period coffeehouse">
+              <path d="M24 180V59a34 34 0 0 1 68 0v121M228 180V59a34 34 0 0 1 68 0v121M58 25v75M24 69h68M262 25v75M228 69h68M15 180h290" fill="none" stroke="#80734f" stroke-width="2"/>
+              <path d="M102 181h-62q10-37 33-63l22-14 24 19 12 28-15 5-15-22-7 14zm116 0h62q-10-37-33-63l-22-14-24 19-12 28 15 5 15-22 7 14z" fill="#546445"/>
+              <ellipse cx="94" cy="87" rx="16" ry="21" fill="#d1ad79"/><ellipse cx="226" cy="87" rx="16" ry="21" fill="#d1ad79"/>
+              <path d="M74 87q0-30 27-23l13 14-20-4-15 23zm172 0q0-30-27-23l-13 14 20-4 15 23z" fill="#453e2e"/>
+              <path d="M116 145h88l-10 8h-68zm41 8h6v32h-6z" fill="#574531"/>
+              <path d="M130 132h17l-3 12h-11zm43 0h17l-3 12h-11z" fill="#f4e5c1" stroke="#574531"/>
+              <path d="M137 128q-5-4 0-10m44 10q-5-4 0-10" fill="none" stroke="#80734f"/>
             </svg>
-            <figcaption><span>Mocha, Yemen</span><span>Baba Budangiri, Karnataka</span></figcaption>
-          </figure>
-        </div>
-      </section>
-      <section class="section team" id="people" aria-labelledby="people-title">
-        <div class="section-label reveal">People</div>
-        <div class="section-body">
-          <h2 id="people-title" class="reveal">Behind Coffea Cantata.</h2>
-          <div class="profiles">
-            <article class="profile-card reveal" data-profile="1" aria-label="Vivek Ayanna, photograph and introduction to follow"><div class="profile-portrait"><span class="profile-number">01</span><div class="portrait-rings" aria-hidden="true"></div><svg class="portrait-outline" viewBox="0 0 160 190" aria-hidden="true"><circle cx="80" cy="65" r="30"/><path d="M22 167V153C22 118 48 105 80 105S138 118 138 153V167"/></svg><span class="photo-label">Photograph to follow</span></div><div class="profile-details"><h3>Vivek Ayanna</h3><p>Role & introduction to follow.</p></div></article>
-            <article class="profile-card reveal" data-profile="2" aria-label="Second person’s profile, details to be added"><div class="profile-portrait"><span class="profile-number">02</span><div class="portrait-rings" aria-hidden="true"></div><svg class="portrait-outline" viewBox="0 0 160 190" aria-hidden="true"><circle cx="80" cy="65" r="30"/><path d="M22 167V153C22 118 48 105 80 105S138 118 138 153V167"/></svg><span class="photo-label">Photograph to follow</span></div><div class="profile-details"><h3>Name to be added</h3><p>Role & introduction to follow.</p></div></article>
           </div>
-        </div>
-      </section>
-      <footer><a href="#home" aria-label="Coffea Cantata home"><svg class="footer-wordmark" viewBox="180 245 920 540" aria-hidden="true"><image href="brand-reference.jpg" width="1280" height="1024"/></svg></a><span>From Origin To Your Cup</span><a class="back-top" href="#home">Back to top ↑</a></footer>
+          <h3>Coffee finds its voice</h3>
+          <p>In Leipzig, Johann Sebastian Bach turned a young woman’s devotion to her daily coffee into a musical comedy. His <em>Coffee Cantata</em> gives our name its rhythm and its sense of play.</p>
+        </article>
+      </div>
     </div>
-  </main>
+  </section>
+  <section id="people" class="panel people-panel">
+    <div class="panel-inner profile">
+      <div class="portrait-placeholder" aria-label="Portrait pending"><span aria-hidden="true">VA</span></div>
+      <div><p class="eyebrow">02 · People</p><h2>Vivek Ayanna</h2><p class="lead">The coffee expertise behind Coffea Cantata.</p><p>Vivek brings the conversation back to the cup. What flavours suit your menu, how do your guests take their coffee, and what would you like them to remember?</p></div>
+    </div>
+  </section>
+  <section id="enquiries" class="panel enquiry-panel">
+    <div class="coffee-words" aria-hidden="true"><span>Arabica</span><span>Medium roast</span><span>Robusta</span><span>Chicory</span><span>Dark roast</span><span>Single origin</span><span>Blend</span><span>Light roast</span></div>
+    <div class="panel-inner dialogue">
+      <p class="eyebrow">03 · Enquiries</p><h2>How can we help?</h2>
+      <p id="coffee-prompt">What kind of coffee do your guests enjoy?</p>
+      <form id="coffee-dialogue">
+        <label class="sr-only" for="question">Tell us what you’re looking for</label>
+        <textarea id="question" rows="2" maxlength="1500" placeholder="Tell us what you’re looking for…" required></textarea>
+        <button type="submit" disabled>Open email draft <span aria-hidden="true">↗</span></button>
+      </form>
+    </div>
+  </section>
+  <section id="contact" class="panel">
+    <div class="panel-inner works">
+      <iframe title="Coffea Cantata at Verna Industrial Estate on Google Maps" src="https://maps.google.com/maps?q=Plot%20L89%2C%20Phase%202%20E%2C%20Verna%20Industrial%20Estate%2C%20Goa%20403722&amp;z=15&amp;output=embed" loading="lazy"></iframe>
+      <div><p class="eyebrow">04 · Contact</p><h2>Works</h2><h3>Coffea Cantata</h3>
+        <address>Plot L89, Phase 2 E<br>Verna Industrial Estate<br>Verna, Goa 403722</address>
+        <p class="contact-links"><a href="tel:+919442723004">+91 94427 23004</a><a id="business-email" href="mailto:vivek@originfoodventures.com">vivek@originfoodventures.com</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Plot%20L89%2C%20Phase%202%20E%2C%20Verna%20Industrial%20Estate%2C%20Goa%20403722">Open in Google Maps ↗</a></p>
+      </div>
+    </div>
+  </section>
+</main>
 </body>
 </html>
+
