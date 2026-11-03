@@ -12,10 +12,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=5">
-  <link rel="stylesheet" href="motion.css?v=5">
-  <link rel="stylesheet" href="layout.css?v=5">
-  <script src="script.js?v=5" defer></script>
+  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="motion.css?v=6">
+  <link rel="stylesheet" href="layout.css?v=6">
+  <script src="script.js?v=6" defer></script>
 </head>
 <body>
   <div class="reading-progress" aria-hidden="true"></div>
@@ -33,7 +33,7 @@
         <svg class="brand-art" viewBox="180 245 920 540" role="img" aria-label="Coffea Cantata original wordmark"><image href="brand-reference.jpg" width="1280" height="1024"/></svg>
         <p>From Origin To Your Cup</p>
       </a>
-      <div class="opening-base"><span>Goa, India</span><a href="#information" class="scroll-link">View information <span aria-hidden="true">↓</span></a></div>
+      <div class="opening-base"><span>Goa, India</span></div>
     </section>
     <div class="content">
       <section class="information section" id="information" aria-labelledby="information-title">
@@ -60,6 +60,20 @@
             <div><dt>Address</dt><dd><address>Plot L89, Phase 2 E<br>Verna Industrial Estate<br>Verna, Goa 403722</address><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Plot%20L89%2C%20Phase%202%20E%2C%20Verna%20Industrial%20Estate%2C%20Goa%20403722" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Open in Google Maps <span aria-hidden="true">↗</span></a></dd></div>
           </dl>
           <a id="email-button" class="email-button" href="mailto:vivek@originfoodventures.com?subject=Business%20enquiry">Email us <span aria-hidden="true">↗</span></a>
+          <form id="enquiry-form" class="enquiry-form" aria-labelledby="enquiry-form-title" aria-describedby="enquiry-help">
+            <h3 id="enquiry-form-title">Tell us what you need.</h3>
+            <p id="enquiry-help">Fill in your enquiry, then send it through your email app.</p>
+            <div class="enquiry-fields">
+              <label>Your name<input name="name" autocomplete="name" maxlength="120" required></label>
+              <label>Email address<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+              <label>Business name <span>(optional)</span><input name="business" autocomplete="organization" maxlength="160"></label>
+              <label>Packet size <span>(optional)</span><select name="packet"><option value="">Please select</option><option>250 g</option><option>500 g</option><option>1 kg</option></select></label>
+              <label class="enquiry-message">Your message<textarea name="message" rows="4" maxlength="4000" required></textarea></label>
+            </div>
+            <button id="enquiry-submit" class="email-button enquiry-submit" type="submit" disabled>Prepare email <span aria-hidden="true">↗</span></button>
+            <p id="enquiry-status" class="enquiry-status" role="status" aria-live="polite"></p>
+            <noscript><p class="small-note">Please use the email address or telephone number above to contact us.</p></noscript>
+          </form>
           <div class="location-map"><iframe title="Google Maps: Plot L89, Verna Industrial Estate, Goa" src="https://maps.google.com/maps?q=Plot%20L89%2C%20Phase%202%20E%2C%20Verna%20Industrial%20Estate%2C%20Goa%20403722&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
         </div>
       </section>
@@ -69,7 +83,6 @@
           <div class="story-copy"><h2 id="story-title">The Legend of Kaldi<br>and the Dancing Goats.</h2>
             <p>According to an Ethiopian legend, a goat herder named Kaldi noticed his goats becoming unusually energetic after eating red coffee cherries. In a popular telling, he tried the cherries himself and experienced the same effect.</p>
             <p>The story continues at a monastery, where a drink made from the cherries helped the monks stay awake. It remains one of coffee’s best-known origin legends.</p>
-            <a class="source-link" href="https://www.aboutcoffee.org/origins/history-of-coffee/" target="_blank" rel="noopener noreferrer">A traditional legend · National Coffee Association <span aria-hidden="true">↗</span></a>
           </div>
           <div class="goat-scene">
             <svg class="dancing-goats" viewBox="0 0 560 390" role="img" aria-label="Two playful dancing goats with backward-curving horns, long ears and animated spiral eyes">
@@ -110,7 +123,6 @@
           <div class="story-copy"><h2 id="india-title">How coffee came to India.</h2>
             <p>Indian coffee tradition tells of Baba Budan, a Sufi pilgrim who is said to have brought seven unroasted coffee seeds from Mocha in Yemen to the hills near Chikkamagaluru, Karnataka, after a pilgrimage to Mecca in the seventeenth century.</p>
             <p>According to the story, he planted the seeds in the hills now known as Baba Budangiri. Those seven seeds are remembered as an important beginning in India’s coffee-growing history.</p>
-            <div class="india-sources"><a class="source-link" href="https://coffeeboard.gov.in/IndexContent.html" target="_blank" rel="noopener noreferrer">Traditional account · Coffee Board of India <span aria-hidden="true">↗</span></a><a class="source-link" href="https://chikkamagaluru.nic.in/en/about-district/" target="_blank" rel="noopener noreferrer">Chikkamagaluru district history <span aria-hidden="true">↗</span></a></div>
           </div>
           <figure class="coffee-journey">
             <svg viewBox="0 0 680 260" role="img" aria-label="An illustrated journey of seven coffee seeds from Mocha in Yemen across the sea to the hills of Baba Budangiri in Karnataka">

@@ -23,15 +23,21 @@ Animations run automatically and respect reduced-motion preferences (or a visito
 
 The contact section includes an address search link and embedded Google Maps view. No precise coordinates are invented.
 
-The Baba Budan story has been added following the latest request, with links to the Coffee Board of India and Chikkamagaluru district accounts. Dates differ between the accounts, so the site uses the broader seventeenth-century traditional account rather than asserting an exact year. The route drawing is a schematic illustration, not a geographical map.
+The Baba Budan story uses the Coffee Board of India and Chikkamagaluru district accounts. Dates differ between the accounts, so the site uses the broader seventeenth-century traditional account rather than asserting an exact year. The route drawing is a schematic illustration, not a geographical map. The website's visible source credits have been removed as requested. Research references are retained here:
 
-The page now uses a centred layout defined in `layout.css`. Vivek Ayanna's name appears in the first People card, not as the contact heading. His supplied business email address remains the enquiry destination. The support credit and promises/relationship copy remain omitted.
+- Kaldi: https://www.aboutcoffee.org/origins/history-of-coffee/
+- Baba Budan: https://coffeeboard.gov.in/IndexContent.html
+- District history: https://chikkamagaluru.nic.in/en/about-district/
+
+The page uses a centred layout defined in `layout.css`, with the header wordmark at the left and navigation at the right. The opening "View information" link has been removed; the main logo remains clickable. Vivek Ayanna's name appears in the first People card, not as the contact heading. His supplied business email address remains the enquiry destination. The support credit and promises/relationship copy remain omitted.
 
 ## Information still to add
 
 - The second contact email: add it to `enquiryRecipients` in `script.js`.
 - Names, roles, photos and introductions for the two people: replace the placeholders in the `people` section of `index.html`.
 
-Email links open the visitor’s email application. There is no backend email service or online checkout.
+The enquiry form collects name, reply email, optional business and packet size, and a message. Until migration, "Prepare email" opens the visitor's email application with these details; the visitor sends the message there. Packet links preselect the form's packet size. There is no backend email service or online checkout, and enquiries are not stored by this static site.
 
-The Kaldi story is a traditional coffee discovery legend. Its source is linked on the page.
+After migration, replace the temporary form submit handler in `script.js` with the new host's server-side mail integration. Add server-side validation and abuse protection, set the supplied business address as the recipient and the visitor's address as Reply-To, and change the button/help/status copy only once real delivery works. Keep all mail credentials on the server.
+
+The Kaldi story is presented as a traditional coffee discovery legend.

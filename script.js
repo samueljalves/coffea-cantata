@@ -2,13 +2,35 @@
 const enquiryRecipients = ['vivek@originfoodventures.com'];
 const emailButton = document.getElementById('email-button');
 const recipientList = enquiryRecipients.join(',');
+const enquiryForm = document.getElementById('enquiry-form');
 document.getElementById('contact-email').href = `mailto:${recipientList}`;
 emailButton.href = `mailto:${recipientList}?subject=Business%20enquiry`;
 document.querySelectorAll('[data-pack]').forEach(link => {
   link.addEventListener('click', () => {
     emailButton.href = `mailto:${recipientList}?subject=${encodeURIComponent(`Coffee enquiry — ${link.dataset.pack}`)}`;
+    enquiryForm.elements.packet.value = link.dataset.pack;
   });
 });
+
+// Temporary email-app handoff. Replace this handler with the new host's
+// server-side email integration after migration; never put mail credentials here.
+enquiryForm.addEventListener('submit', event => {
+  event.preventDefault();
+  if (!enquiryForm.reportValidity()) return;
+  const fields = new FormData(enquiryForm);
+  const packet = fields.get('packet');
+  const subject = packet ? `Coffee enquiry — ${packet}` : 'Business enquiry';
+  const body = [
+    `Name: ${fields.get('name').trim()}`,
+    `Email: ${fields.get('email').trim()}`,
+    fields.get('business').trim() ? `Business: ${fields.get('business').trim()}` : '',
+    packet ? `Packet size: ${packet}` : '',
+    '', fields.get('message').trim()
+  ].filter((line, index) => line || index === 4).join('\r\n');
+  document.getElementById('enquiry-status').textContent = 'Complete sending in your email app. If it does not open, use the email address above.';
+  window.location.href = `mailto:${recipientList}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
+document.getElementById('enquiry-submit').disabled = false;
 
 // Old links pointed straight at the information section. A new visit should
 // introduce the brand first; navigation within the page still scrolls normally.
