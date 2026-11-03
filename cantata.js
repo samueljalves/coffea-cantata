@@ -32,9 +32,15 @@ const dialogue = document.querySelector('#coffee-dialogue');
 const question = document.querySelector('#question');
 let currentPrompt = 0;
 setInterval(() => {
-  if (reducedMotion.matches || document.hidden || dialogue.matches(':focus-within')) return;
+  if (document.hidden || dialogue.matches(':focus-within')) return;
   currentPrompt = (currentPrompt + 1) % prompts.length;
   prompt.textContent = prompts[currentPrompt];
+  if (!reducedMotion.matches) {
+    prompt.animate([{ opacity: 0, transform: 'translateY(5px)' }, { opacity: 1, transform: 'none' }], {
+      duration: 450,
+      easing: 'ease-out'
+    });
+  }
 }, 6500);
 
 dialogue.addEventListener('submit', event => {
