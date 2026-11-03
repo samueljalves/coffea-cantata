@@ -59,9 +59,9 @@ button:disabled { opacity: .5; cursor: default; }
 .dialogue-input button { position: absolute; top: 8px; right: 8px; width: 44px; margin: 0; padding: 0; font-size: 22px; }
 :focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
 .contact-map { position: relative; min-height: 370px; overflow: hidden; border: 1px solid var(--line); background: #dfe4bc; }
-.contact-map > svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.contact-map iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; pointer-events: none; }
 .location-pin { position: absolute; top: 50%; left: 50%; translate: -50% -50%; display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; color: #823e2e; background: #f4efdb; box-shadow: 0 3px 12px #203d2b30; }
-.map-label { position: absolute; bottom: 12px; left: 14px; font-size: 11px; }
+#contact h2 { margin-bottom: 2px; }
 .division { margin-bottom: 14px; }
 .contact-links { display: grid; justify-items: start; gap: 8px; margin-top: 20px; overflow-wrap: anywhere; }
 .contact-links a { text-decoration: underline; text-underline-offset: 4px; }
