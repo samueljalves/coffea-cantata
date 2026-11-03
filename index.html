@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#dbe8d1">
+  <meta name="description" content="Coffea Cantata supplies coffee in 250 g, 500 g and 1 kg packets to cafés, hotels and hospitality businesses. Contact Vivek Ayanna in Goa.">
+  <title>Coffea Cantata — From Origin To Your Cup</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="motion.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <a class="skip-link" href="#information">Skip to information</a>
+  <header class="header">
+    <a class="header-name" href="#home">Coffea Cantata</a>
+    <nav aria-label="Main navigation">
+      <a href="#information">Information</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section class="opening" id="home" aria-label="Coffea Cantata">
+      <a class="wordmark" href="#information" aria-label="Coffea Cantata. View business information">
+        <h1><span>Coffea</span><span>Cantata</span></h1>
+        <p>From Origin To Your Cup</p>
+      </a>
+      <div class="opening-base"><span>Goa, India</span><button type="button" id="motion-toggle" aria-pressed="false" hidden>Animation off</button><a href="#information" class="scroll-link">View information <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <div class="content">
+      <section class="information section" id="information" aria-labelledby="information-title">
+        <div class="section-label reveal">Information</div>
+        <div class="section-body reveal">
+          <h2 id="information-title">Coffee for businesses.</h2>
+          <p class="description">Coffea Cantata is a coffee business based in Goa, supplying cafés, coffee shops, hotels and other hospitality businesses.</p>
+          <h3 class="field-label">Available packet sizes</h3>
+          <div class="sizes" aria-label="Coffee packet sizes">
+            <a href="#contact" data-pack="250 g" aria-label="Contact us about 250 gram coffee packets"><span>250 <small>g</small></span><span class="size-arrow" aria-hidden="true">↗</span></a>
+            <a href="#contact" data-pack="500 g" aria-label="Contact us about 500 gram coffee packets"><span>500 <small>g</small></span><span class="size-arrow" aria-hidden="true">↗</span></a>
+            <a href="#contact" data-pack="1 kg" aria-label="Contact us about 1 kilogram coffee packets"><span>1 <small>kg</small></span><span class="size-arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <p class="small-note">For product information, pricing and business enquiries, please contact us.</p>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-title">
+        <div class="section-label reveal">Contact</div>
+        <div class="section-body reveal">
+          <h2 id="contact-title">Vivek Ayanna</h2>
+          <dl class="contact-list">
+            <div><dt>Email</dt><dd><a id="contact-email" href="mailto:vivek@originfoodventures.com">vivek@originfoodventures.com</a></dd></div>
+            <div><dt>Telephone</dt><dd><a href="tel:+919442723004">+91 94427 23004</a></dd></div>
+            <div><dt>Address</dt><dd><address>Plot L89, Phase 2 E<br>Verna Industrial Estate<br>Verna, Goa 403722</address></dd></div>
+          </dl>
+          <a id="email-button" class="email-button" href="mailto:vivek@originfoodventures.com?subject=Business%20enquiry">Email us <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+
+      <section class="story section" id="story" aria-labelledby="story-title">
+        <div class="section-label reveal">Coffee origins</div>
+        <div class="section-body story-body reveal">
+          <div class="story-copy"><h2 id="story-title">The legend of Kaldi.</h2>
+            <p>According to an Ethiopian legend, a goat herder named Kaldi noticed his goats becoming unusually energetic after eating red coffee cherries. In a popular telling, he tried the cherries himself and experienced the same effect.</p>
+            <p>The story continues at a monastery, where a drink made from the cherries helped the monks stay awake. It remains one of coffee’s best-known origin legends.</p>
+            <a class="source-link" href="https://www.aboutcoffee.org/origins/history-of-coffee/" target="_blank" rel="noopener noreferrer">A traditional legend · National Coffee Association <span aria-hidden="true">↗</span></a>
+          </div>
+          <svg class="goat" viewBox="0 0 220 250" role="img" aria-label="Goat illustration with subtly animated spring eyes">
+            <g class="goat-lines"><path d="M78 77C57 52 65 25 74 14Q74 49 91 61M142 77C163 52 155 25 146 14Q146 49 129 61"/><path d="M76 77Q47 57 17 85Q45 110 76 96M144 77Q173 57 203 85Q175 110 144 96"/><path d="M74 87Q75 58 110 60Q145 58 146 87L149 125Q146 157 131 182Q110 198 89 182Q74 157 71 125Z"/><path d="M94 64L87 80L104 74L110 85L119 74L133 80L126 64M95 189L102 218L110 205L118 218L125 189M94 158Q110 150 126 158L130 177Q110 194 90 177ZM101 168L102 169M119 168L118 169M110 180L110 186M103 116L99 142M117 116L121 142"/></g>
+            <g class="eye eye-left"><ellipse cx="89" cy="107" rx="17" ry="12"/><path d="M88 98C66 104 86 125 98 112S84 93 79 106S98 121 99 107"/></g>
+            <g class="eye eye-right"><ellipse cx="131" cy="107" rx="17" ry="12"/><path d="M130 98C108 104 128 125 140 112S126 93 121 106S140 121 141 107"/></g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section team" id="people" aria-labelledby="people-title">
+        <div class="section-label reveal">People</div>
+        <div class="section-body">
+          <h2 id="people-title" class="reveal">Behind Coffea Cantata.</h2>
+          <div class="profiles">
+            <article class="profile-card reveal" data-profile="1" aria-label="First person’s profile, details to be added">
+              <div class="profile-portrait"><span class="profile-number">01</span><div class="portrait-rings" aria-hidden="true"></div><svg class="portrait-outline" viewBox="0 0 160 190" aria-hidden="true"><circle cx="80" cy="65" r="30"/><path d="M22 167V153C22 118 48 105 80 105S138 118 138 153V167"/></svg><span class="photo-label">Photograph to follow</span></div>
+              <div class="profile-details"><h3>Name to be added</h3><p>Role & introduction to follow.</p></div>
+            </article>
+            <article class="profile-card reveal" data-profile="2" aria-label="Second person’s profile, details to be added">
+              <div class="profile-portrait"><span class="profile-number">02</span><div class="portrait-rings" aria-hidden="true"></div><svg class="portrait-outline" viewBox="0 0 160 190" aria-hidden="true"><circle cx="80" cy="65" r="30"/><path d="M22 167V153C22 118 48 105 80 105S138 118 138 153V167"/></svg><span class="photo-label">Photograph to follow</span></div>
+              <div class="profile-details"><h3>Name to be added</h3><p>Role & introduction to follow.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <footer><a href="#home">Coffea Cantata</a><span>From Origin To Your Cup</span><a class="back-top" href="#home">Back to top ↑</a></footer>
+    </div>
+  </main>
+</body>
+</html>
